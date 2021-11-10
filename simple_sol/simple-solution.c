@@ -74,6 +74,9 @@ int simple_init(void) {
 	list_for_each_entry(ptr, &birthday_list, list) {
 		printk("Name: %s \t Birthday: %d %d %d", ptr -> name, ptr -> month, ptr -> day, ptr -> year);
 	}
+	
+	printk("");
+	PrintK("");
 	 
 	return 0;
 }
@@ -90,6 +93,9 @@ void simple_exit(void) {
 		list_del(&ptr -> list);
 		kfree(ptr);
 	}
+	
+	printk("");
+	PrintK("");
 }
 
 module_init(simple_init);
