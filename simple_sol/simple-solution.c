@@ -30,35 +30,35 @@ int simple_init(void) {
 	Landon = kmalloc(sizeof(*Landon), GFP_KERNEL);
 	Landon -> name = "Landon";
 	Landon -> day = 14;
-	Landon -> month = 02;
+	Landon -> month = 2;
 	Landon -> year = 2000;
 	INIT_LIST_HEAD(&Landon -> list);
     
 	Lin = kmalloc(sizeof(*Lin), GFP_KERNEL);
 	Lin -> name = "Lin   ";
 	Lin -> day = 25;
-	Lin -> month = 08;
+	Lin -> month = 8;
 	Lin -> year = 1999;
 	INIT_LIST_HEAD(&Lin -> list);
     
 	YaoRong = kmalloc(sizeof(*YaoRong), GFP_KERNEL);
 	YaoRong -> name = "YaoRong";
-	YaoRong -> day = 08;
-	YaoRong -> month = 02;
+	YaoRong -> day = 8;
+	YaoRong -> month = 2;
 	YaoRong -> year = 1994;
 	INIT_LIST_HEAD(&YaoRong -> list);
     
 	Brandson = kmalloc(sizeof(*Brandson), GFP_KERNEL);
 	Brandson -> name = "Brandson";
-	Brandson -> day = 07;
+	Brandson -> day = 7;
 	Brandson -> month = 23;
 	Brandson -> year = 2000;
 	INIT_LIST_HEAD(&Brandson -> list);
     
 	Monica = kmalloc(sizeof(*Monica), GFP_KERNEL);
 	Monica -> name = "Monica";
-	Monica -> day = 08;
-	Monica -> month = 09;
+	Monica -> day = 8;
+	Monica -> month = 9;
 	Monica -> year = 1992;
 	INIT_LIST_HEAD(&Monica -> list);
 	
@@ -75,8 +75,7 @@ int simple_init(void) {
 		printk("Name: %s \t Birthday: %d %d %d", ptr -> name, ptr -> month, ptr -> day, ptr -> year);
 	}
 	
-	printk("");
-	PrintK("");
+	printk(" ");
 	 
 	return 0;
 }
@@ -94,8 +93,7 @@ void simple_exit(void) {
 		kfree(ptr);
 	}
 	
-	printk("");
-	PrintK("");
+	printk(" ");
 }
 
 module_init(simple_init);
