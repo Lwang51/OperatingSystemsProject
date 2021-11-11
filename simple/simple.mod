@@ -1,2 +1,2 @@
-/media/ubuntu/TEMP/OS/simple.o
+/home/ubuntu/Documents/OSProject/Simple/simple.o
 
